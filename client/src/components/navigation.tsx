@@ -25,38 +25,45 @@ export default function Navigation() {
             <div className="hidden md:flex items-center space-x-8">
               <a 
                 href="#" 
-                className="text-foreground hover:text-accent transition-colors duration-300"
+                className="text-foreground hover:text-accent transition-colors duration-300 font-medium"
                 data-testid="link-home"
               >
                 Home
               </a>
               <a 
                 href="#" 
-                className="text-muted-foreground hover:text-accent transition-colors duration-300"
+                className="text-muted-foreground hover:text-accent transition-colors duration-300 font-medium"
                 data-testid="link-movies"
               >
                 Movies
               </a>
               <a 
                 href="#" 
-                className="text-muted-foreground hover:text-accent transition-colors duration-300"
+                className="text-muted-foreground hover:text-accent transition-colors duration-300 font-medium"
                 data-testid="link-shows"
               >
                 TV Shows
               </a>
               <a 
                 href="#" 
-                className="text-muted-foreground hover:text-accent transition-colors duration-300"
+                className="text-muted-foreground hover:text-accent transition-colors duration-300 font-medium"
                 data-testid="link-genres"
               >
                 Genres
               </a>
               <a 
                 href="#" 
-                className="text-muted-foreground hover:text-accent transition-colors duration-300"
-                data-testid="link-mylist"
+                className="text-muted-foreground hover:text-accent transition-colors duration-300 font-medium"
+                data-testid="link-contact"
               >
-                My List
+                Contact
+              </a>
+              <a 
+                href="#" 
+                className="text-muted-foreground hover:text-accent transition-colors duration-300 font-medium"
+                data-testid="link-support"
+              >
+                Support
               </a>
             </div>
           </div>
@@ -67,7 +74,7 @@ export default function Navigation() {
               <Input
                 type="text"
                 placeholder="Search movies..."
-                className="bg-muted border-border rounded-lg pr-10 text-foreground placeholder-muted-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
+                className="bg-muted/80 backdrop-blur-sm border-border rounded-lg pr-10 text-foreground placeholder-muted-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
                 data-testid="input-search"
               />
               <Search className="absolute right-3 top-3 h-4 w-4 text-muted-foreground" />
@@ -104,20 +111,23 @@ export default function Navigation() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 glass-morphism rounded-lg p-4">
             <div className="flex flex-col space-y-4">
-              <a href="#" className="text-foreground hover:text-accent transition-colors" data-testid="link-home-mobile">
+              <a href="#" className="text-foreground hover:text-accent transition-colors font-medium" data-testid="link-home-mobile">
                 Home
               </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors" data-testid="link-movies-mobile">
+              <a href="#" className="text-muted-foreground hover:text-accent transition-colors font-medium" data-testid="link-movies-mobile">
                 Movies
               </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors" data-testid="link-shows-mobile">
+              <a href="#" className="text-muted-foreground hover:text-accent transition-colors font-medium" data-testid="link-shows-mobile">
                 TV Shows
               </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors" data-testid="link-genres-mobile">
+              <a href="#" className="text-muted-foreground hover:text-accent transition-colors font-medium" data-testid="link-genres-mobile">
                 Genres
               </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors" data-testid="link-mylist-mobile">
-                My List
+              <a href="#" className="text-muted-foreground hover:text-accent transition-colors font-medium" data-testid="link-contact-mobile">
+                Contact
+              </a>
+              <a href="#" className="text-muted-foreground hover:text-accent transition-colors font-medium" data-testid="link-support-mobile">
+                Support
               </a>
             </div>
           </div>

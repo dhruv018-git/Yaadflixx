@@ -77,12 +77,17 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-muted-foreground" data-testid="text-copyright">
-            © 2024 YaadFlix. All rights reserved. | 
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-semibold ml-1">
-              Made by Dhruv and Danish
-            </span>
+          <p className="text-muted-foreground mb-2" data-testid="text-copyright">
+            © 2024 YaadFlix. All rights reserved.
           </p>
+          <div className="flex items-center justify-center space-x-2">
+            <span className="text-muted-foreground">Made with</span>
+            <span className="text-red-500 text-xl">❤️</span>
+            <span className="text-muted-foreground">by</span>
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-bold text-lg pulse-glow">
+              Dhruv and Danish
+            </span>
+          </div>
         </div>
       </div>
     </footer>

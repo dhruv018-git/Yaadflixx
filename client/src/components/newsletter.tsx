@@ -25,7 +25,7 @@ export default function Newsletter() {
           <div 
             className="glass-morphism rounded-2xl p-12 text-center bg-cover bg-center"
             style={{ 
-              backgroundImage: `url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=600')`
+              backgroundImage: `url('https://images.unsplash.com/photo-1478720568477-b0829c5c6dd4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=600')`
             }}
           >
             <div className="bg-black/60 backdrop-blur-sm rounded-2xl p-8">

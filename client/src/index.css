@@ -81,6 +81,12 @@
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .glass-morphism:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(139, 92, 246, 0.2);
   }
 
   .hero-slider {
@@ -89,11 +95,15 @@
 
   .movie-card {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
   }
 
   .movie-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 25px 50px -12px rgba(139, 92, 246, 0.3);
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(139, 92, 246, 0.4), 0 0 30px rgba(34, 211, 238, 0.2);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    background: rgba(255, 255, 255, 0.08);
   }
 
   .gradient-button {
@@ -110,11 +120,14 @@
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.15);
   }
 
   .category-pill:hover {
     background: rgba(139, 92, 246, 0.3);
-    transform: scale(1.05);
+    transform: scale(1.05) translateY(-2px);
+    border: 1px solid rgba(139, 92, 246, 0.5);
+    box-shadow: 0 8px 25px -5px rgba(139, 92, 246, 0.25);
   }
 
   .scroll-fade {
@@ -140,4 +153,17 @@
   50% { 
     transform: translateY(-10px); 
   }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(139, 92, 246, 0.4);
+  }
+}
+
+.pulse-glow {
+  animation: pulse 2s ease-in-out infinite;
 }

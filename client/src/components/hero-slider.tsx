@@ -14,7 +14,7 @@ export default function HeroSlider({ featuredMovie }: HeroSliderProps) {
     duration: 152,
     genre: "Action, Crime, Drama",
     rating: 9.0,
-    backdropUrl: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080"
+    backdropUrl: "https://images.unsplash.com/photo-1489599856615-8d7b81fbf6d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080"
   };
 
   const movie = featuredMovie || defaultMovie;
